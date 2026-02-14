@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CareerBuilder</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+        }
+        button {
+            background-color: violet;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: white;
+            color: violet;
+        }
+        .dashboard-content {
+            margin-top: 50px;
+        }
+        #chat-container {
+            width: 400px;
+            height: 500px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid violet;
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <section class="dashboard-content">
+        <p>Explore career paths, analyze skills, and plan your future!</p>
+    </section>
+
+    <!-- Embedded Chatbot -->
+    <div id="chat-container"></div>
+    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/12/24/15/20241224153710-GU4UYT3Y.js"></script>
+
+        function logout() {
+            alert("Logging out...");
+            window.location.href = "index.html"; // Redirect to login page
+        }
+    </script>
+
+</body>
+</html>

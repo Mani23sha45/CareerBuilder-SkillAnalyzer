@@ -1,0 +1,185 @@
+/* General Styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: linear-gradient(90deg, #7D00FF, #0099FF, #FF007A);
+    box-shadow: 0px 5px 15px rgba(255, 0, 122, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+    text-shadow: 0px 0px 10px #FFD700;
+}
+
+/* Login & Sign-Up Buttons */
+.login-btn, .signup-btn {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.login-btn {
+    background: #FF007A;
+    border: 2px solid #FF007A;
+}
+
+.signup-btn {
+    background: #0099FF;
+    border: 2px solid #0099FF;
+}
+
+.login-btn:hover, .signup-btn:hover {
+    box-shadow: 0px 0px 15px white;
+}
+
+/* Hero Section */
+.hero {
+    margin: 50px 0;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.hero:hover {
+    box-shadow: 0px 0px 20px rgba(255, 0, 122, 0.8);
+}
+
+button {
+    background: #7D00FF;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #FF007A;
+    box-shadow: 0px 0px 20px #FF007A;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.feature-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px #FFD700;
+}
+
+.feature-box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #FFD700;
+    transition: 0.3s;
+}
+
+.feature-box:hover i {
+    text-shadow: 0px 0px 10px #FFD700;
+}
+
+/* Floating Icons */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.feature-box i {
+    animation: floating 3s infinite ease-in-out;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: #0099FF;
+}
+
+/* Form Container */
+.form-container {
+    width: 300px;
+    padding: 20px;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 122, 0.8);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #7D00FF;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #FF007A;
+    box-shadow: 0px 0px 20px #FF007A;
+}
+
+/* Dashboard */
+.dashboard-content {
+    padding: 50px;
+    font-size: 18px;
+}
+
